@@ -773,7 +773,7 @@
 ################################################################################
 # FMC Voltage adjust
 ################################################################################
-set_property -dict {PACKAGE_PIN AH35 IOSTANDARD LVCMOS18} [get_ports FMC_VADJ_ON_B_LS]
+# set_property -dict {PACKAGE_PIN AH35 IOSTANDARD LVCMOS18} [get_ports FMC_VADJ_ON_B_LS]
 
 ################################################################################
 # FMC for something
