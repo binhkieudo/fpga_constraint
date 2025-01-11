@@ -38,3 +38,7 @@ set_property DRIVE 4 [get_ports PMOD_5]
 set_property DRIVE 4 [get_ports PMOD_6]
 set_property DRIVE 4 [get_ports PMOD_7]
 set_property DRIVE 4 [get_ports PMOD_8]
+
+##### Fan control ##########################
+# HDA20 (C24)
+set_property -dict {PACKAGE_PIN A12 IOSTANDARD LVCMOS33} [get_ports FAN];
