@@ -1,0 +1,6 @@
+ACTION=="remove", GOTO="tty_end"
+SUBSYSTEM!="tty", GOTO="tty_end"
+ 
+SUBSYSTEMS=="usb", KERNEL=="ttyUSB*", DRIVERS=="cp210x", ACTION=="add", ENV{ID_VENDOR_ID}=="1790", ENV{ID_MODEL_ID}=="0008", SYMLINK+="ttyRADIO" 
+ 
+LABEL="tty_end"
